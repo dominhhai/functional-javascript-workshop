@@ -1,47 +1,46 @@
-A higher-order function is a function that does at least one of the following:
+Một hàm higher-order là một hàm thỏa mãn ít nhất một điều kiện dưới đây:
 
-* Take one or more functions as an input
-* Output a function
+* Nhận một hay nhiều hàm khác (function) như tham số đầu vào
+* Trả ra một hàm (function)
 
-All other functions are first order functions. [1]
+Các hàm không thỏa mãn điều kiện trên được gọi là hàm first order. [1]
 
-Unlike many other languages with imperative features, JavaScript allows you to utilize higher-order functions because it has "first-class functions". This means functions can be treated just like any other value in JavaScript: just like Strings or Numbers, Function values can be stored as variables, properties on objects or passed to other functions as arguments. Function values are actually Objects (inheriting from `Function.prototype`) so you can even add properties and store values on them, just like any regular Object.
+Không như các ngôn ngữ lập trình khác, JavaScript hỗ trợ hàm higher-order vì các hàm trong JavaScript là các "hàm lớp đầu" ("first-class functions"). Vì vậy, bạn có thể coi hàm như một đối tượng trong chương trình giống như Strings hay Numbers, hay nói cách khác các giá trị của hàm (Function values) có thể được lưu trữ vào một biến, một thuộc tính của một đối tượng nào đó, hoặc truyền nó vào một hàm thông qua tham số đầu vào của hàm đó. Về bản chất, các hàm chính là các đối tượng (Objects) được kế thừa từ `Function.prototype`, nên bạn thậm chí còn có thể thêm được thuộc tính cho nó, lưu trữ giá trị của nó y như các các đối tượng bình thường khác.
 
-The key difference between Functions and other value types in JavaScript is the call syntax: if a reference to a function is followed by parens and some optional comma-separated values: `someFunctionValue(arg1, arg2, etc)`, then the function body will be executed with the supplied arguments (if any).
+Điểm khác cơ bản giữa hàm và các kiểu giá trị khác trong JavaScript là cú pháp gọi thực thi: nếu được gọi với cặp dấu ngoặc đơn (), và (có thể có hoặc không) các giá trị truyền vào bên trong cặp ngoặc đơn này như: `someFunctionValue(arg1, arg2, etc)`, thì nội dung của hàm sẽ được thực thi với các tham số đầu vào trong dấu ngoặc đơn.
 
-In this exercise we're going demonstrate that functions can be passed as values by passing you a function as an argument.
+Trong bài tập này ta sẽ sử dụng một hàm có thể nhận một hàm khác qua tham số đầu vào để giải quyết vấn đề.
 
-# Task
+# Nhiệm vụ
 
-Implement a function that takes a function as its first argument, a number `num` as its second argument, then executes the passed in function `num` times.
+Viết một hàm nhận một hàm `operation` đầu vào qua tham số đầu tiên và một số `num` qua tham số thứ 2, sau đó sẽ gọi thực thi `operation` `num` lần.
 
-Use the boilerplate code given to you below to get started. Most/all future exercises will provide boilerplate.
+Hay sử dụng mẫu chương trình bên dưới để viết mã của bạn. Hầu hết các bài tập ở đây đều cung cấp cho bạn một mẫu sẵn để bạn hoàn thiện tiếp.
 
-## Arguments
+## Tham số
 
-* operation: A Function, takes no arguments, returns no useful value.
-* num: the number of times to call `operation`
+* operation: Một hàm không có tham số đầu vào và không trả ra gì cả.
+* num: Số lần cần gọi hàm `operation`
 
-## Resources
+## Tham khảo
 
 * https://developer.mozilla.org/en/docs/Web/JavaScript/Reference/Functions_and_function_scope
 * https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Function/prototype
 
-## Hints 
+## Gợi ý
 
-* This is really simple.
-* It's ok to use a loop in your implementation, bonus points
-if you use recursion instead.
-* You may notice some output. That is coming from the function we passed you.
-* You do not need to console.log anything.
+* Đừng nghĩ phức tạp vì cái này thực sự rất đơn giản.
+* Bạn có thể dùng vòng lặp để xử lý, nhưng nên sử dụng phương pháp hồi quy.
+* Bạn cần chú ý chút tới đầu ra, vì nó có thể chứa thông tin hữu ích.
+* Bạn không cần phải console.log cái gì cả.
 
-## Boilerplate
+## Mẫu
 
 ```js
 function repeat(operation, num) {
-  // SOLUTION GOES HERE
+  // TODO hoàn thiện đoạn mã này
 }
 
-// Do not remove the line below
+// Đừng thay đổi dòng này
 module.exports = repeat
 ```

@@ -1,17 +1,18 @@
-# Task
+# Nhiệm vụ
 
-Write a function that takes an input string and returns it uppercased.
+Viết một hàm (function) nhận một chuỗi đầu vào, chuyển tất cả các kí tự của chuỗi này thành kí tự in hoa và trả ra chuỗi hoa hóa đó.
 
-## Arguments
+## Tham số
 
-* input: a String of random words (lorem ipsum).
+* input: một chuỗi kí tự bất kì (String).
 
-## Boilerplate
+## Mẫu
 
 ```js
 function upperCaser(input) {
-  // SOLUTION GOES HERE
+  // TODO hoàn thiện đoạn mã này
 }
 
+// Đừng thay đổi dòng này
 module.exports = upperCaser
 ```
